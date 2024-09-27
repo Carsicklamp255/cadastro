@@ -100,3 +100,22 @@ while not resposta == 'sair':
   elif resposta.lower() not in ('cadastrar', 'consultar', 'excluir', 'sair', 'ver'):
     print('digite apenas as palavrar cadastrar, consultar, excluir, sair e ver!')
     input("Você deseja se cadastrar um usuario, consultar um cadastro, excluir ou sair do sistema? ")
+
+
+
+
+
+
+def listar_cadastro():
+    with open('cadastro.csv', 'r') as file:
+        reader = csv.reader(file)
+        header = next(reader, None)  # Ler o cabeçalho (se houver)
+        
+        if header:  # Garantir que o cabeçalho não seja None
+            for row in reader:
+                if any(row):  # Verifica se a linha não está em branco
+                    for i in range(len(header)):
+                        print(f"{header[i]}: {row[i]}")
+                    print("-" * 40)
+        else:
+            print("O arquivo CSV está vazio ou sem cabeçalho.")
