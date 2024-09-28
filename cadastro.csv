@@ -1,4 +1,4 @@
-gabriel,12,12,12,12,12
-gabriel ,12,12,12,12,12
-gabriel,12,12,12,12,12
-Gabriel Barreto Parisot,True,True,False,False,gabriel@gmail.com
+nome_completo,idade,CPF,endereco,telefone,email,produto
+Gabriel,19,1239,rua dos bobos,193121312,gabrielparisot@gmailcom,mouse
+Gabriel Barreto,19,13123,rua dos bobos,13423,gabrielhotmail.com,mouse pad
+Gabriel Barreto Parisot,19,1231241,rua dos bobos ,1234412,@gmail,caixa de som
